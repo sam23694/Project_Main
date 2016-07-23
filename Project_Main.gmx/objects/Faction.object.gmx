@@ -28,14 +28,16 @@
             <string>///Faction initialisation
 
 culture = -1;
-
 factionColor = c_white;
 
 flag = -1;
 
 techUnlocked = 0;
-
 techs[techUnlocked] = 0;
+
+//Weapons
+weaponNumber = 0;
+weaponStore[weaponNumber] = 0;
 
 //resource system
 resource = instance_create(0, 0, ResourceSystem);

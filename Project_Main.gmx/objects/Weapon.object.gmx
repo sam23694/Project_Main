@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>ObjectStoreCore</parentName>
+  <parentName>ObjectNamedCore</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,6 +28,18 @@
             <string>///Initialisation
 
 event_inherited();
+
+//parts
+delivery = -1;
+primary = -1;
+secondary = -1;
+passive = -1;
+
+//faction
+creator = -1;
+
+//cost
+totalCost = 0;
 
 </string>
           </argument>

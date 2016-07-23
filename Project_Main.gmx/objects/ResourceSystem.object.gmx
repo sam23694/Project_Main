@@ -29,6 +29,11 @@
 
 //population grows per turn and stands for millions of people. Growth can be negative and positive.
 //Typical values: population: 10 (for 10 million), growth 0.01 (for ten thousand)
+//***This method needs to change. Population is a building by building basis
+//One possible method is to give each residential building a pop value. 
+//A threshold value will determine when a new series of residential builds are spawned, the script will read over all buildings and grow exsiting or spawn new as designed. 
+//Each building will consume a number of pop and provide growth, loss of the building will subtract pop by the pop value
+//therefore population should not be abstract as number of millions, perhaps a full value or number of thousands?
 population = 0;//total
 pop_growth = 0;//growth per turn
 

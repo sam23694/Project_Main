@@ -29,12 +29,17 @@
 
 event_inherited();
 
+//type
 isDelivery = false;
 isPrimary = false;
 isSecondary = false;
 isPassive = false;
 
+//effect
 effect = -1;
+
+//Cost
+prodCost = 0;
 </string>
           </argument>
         </arguments>

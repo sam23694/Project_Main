@@ -129,6 +129,7 @@
       <scripts name="FactionSystemFunctions">
         <script>scripts\FactionAdd.gml</script>
         <script>scripts\FactionGet.gml</script>
+        <script>scripts\FactionAddWeapon.gml</script>
         <scripts name="FactionSpawn">
           <script>scripts\FactionSystemSpawn.gml</script>
           <script>scripts\FactionRandomSpawn.gml</script>
@@ -186,9 +187,11 @@
       </scripts>
       <scripts name="TechSystem">
         <script>scripts\TechAdd.gml</script>
+        <script>scripts\TechGet.gml</script>
       </scripts>
       <scripts name="WeaponSystem">
         <script>scripts\WeaponPartAdd.gml</script>
+        <script>scripts\WeaponAdd.gml</script>
       </scripts>
     </scripts>
     <scripts name="ArenaSystem">
@@ -269,6 +272,8 @@
       </objects>
       <objects name="WeaponSystem">
         <object>objects\WeaponSystem</object>
+        <object>objects\Weapon</object>
+        <object>objects\WeaponPartSystem</object>
         <object>objects\WeaponPart</object>
       </objects>
     </objects>

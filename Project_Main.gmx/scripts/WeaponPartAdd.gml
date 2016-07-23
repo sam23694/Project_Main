@@ -1,4 +1,4 @@
-///WeaponpartAdd(name, description, effect, isDelivery, isPrimary, isSecondary, ispassive)
+///WeaponpartAdd(name, description, effect, isDelivery, isPrimary, isSecondary, isPassive, prodCost)
 
 var obj = instance_create(0, 0, WeaponPart);
 
@@ -9,11 +9,12 @@ obj.isDelivery = argument3;
 obj.isPrimary = argument4;
 obj.isSecondary = argument5;
 obj.isPassive = argument6;
+obj.prodCost = argument7;
 
-var index = WeaponSystem.number;
+var index = WeaponPartSystem.number;
 
-WeaponSystem.store[index] = obj;
+WeaponPartSystem.store[index] = obj;
 
-WeaponSystem.number++;
+WeaponPartSystem.number++;
 
-DebugLog("Weapon part "+string(WeaponSystem.store[index].name)+" added.");
+DebugLog("Weapon part "+string(WeaponPartSystem.store[index].name)+" added.");
