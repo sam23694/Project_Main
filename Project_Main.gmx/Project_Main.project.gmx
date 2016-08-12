@@ -120,7 +120,7 @@
         <script>scripts\AnomalyInsert.gml</script>
         <script>scripts\AnomalyInsertRandom.gml</script>
       </scripts>
-      <scripts name="BuildingSystem">
+      <scripts name="BuildingSystemFunctions">
         <script>scripts\BuildingAdd.gml</script>
         <script>scripts\BuildingGet.gml</script>
       </scripts>
@@ -176,30 +176,30 @@
           </scripts>
         </scripts>
       </scripts>
-      <scripts name="CultureSystem">
+      <scripts name="CultureSystemFunctions">
         <script>scripts\CultureAdd.gml</script>
         <script>scripts\CultureGet.gml</script>
         <script>scripts\CulturePerkLimit.gml</script>
         <script>scripts\CultureSetPerk.gml</script>
       </scripts>
-      <scripts name="PerkSystem">
+      <scripts name="PerkSystemFunctions">
         <script>scripts\PerkAdd.gml</script>
       </scripts>
-      <scripts name="TechSystem">
+      <scripts name="TechSystemFunctions">
         <script>scripts\TechAdd.gml</script>
         <script>scripts\TechGet.gml</script>
       </scripts>
-      <scripts name="WeaponSystem">
+      <scripts name="WeaponSystemFunctions">
         <script>scripts\WeaponPartAdd.gml</script>
         <script>scripts\WeaponAdd.gml</script>
       </scripts>
     </scripts>
-    <scripts name="ArenaSystem">
-      <scripts name="BackgroundSystem">
+    <scripts name="ArenaSystemFunctions">
+      <scripts name="BackgroundSystemFunctions">
         <script>scripts\BackgroundAdd.gml</script>
         <script>scripts\BackgroundGet.gml</script>
       </scripts>
-      <scripts name="EnvironmentSystem">
+      <scripts name="EnvironmentSystemFunctions">
         <script>scripts\EnvironmentAdd.gml</script>
         <script>scripts\EnvironmentAddEffect.gml</script>
         <script>scripts\EnvironmentGet.gml</script>
@@ -224,69 +224,81 @@
         <object>objects\ObjectStoreCore</object>
         <object>objects\ObjectNamedCore</object>
       </objects>
-    </objects>
-    <objects name="WorldSystem">
-      <object>objects\WorldSystem</object>
-      <object>objects\World</object>
-      <object>objects\WorldRender</object>
-      <objects name="BiomeSystem">
-        <object>objects\BiomeSystem</object>
-        <object>objects\Biome</object>
+      <objects name="WorldSystem">
+        <object>objects\WorldSystem</object>
+        <object>objects\World</object>
+        <object>objects\WorldRender</object>
+        <objects name="BiomeSystem">
+          <object>objects\BiomeSystem</object>
+          <object>objects\Biome</object>
+        </objects>
+        <objects name="AnomalySystem">
+          <object>objects\AnomalySystem</object>
+          <object>objects\Anomaly</object>
+        </objects>
+        <objects name="CitySystem">
+          <object>objects\CitySystem</object>
+          <object>objects\City</object>
+        </objects>
+        <objects name="BuildingSystem">
+          <object>objects\BuildingSystem</object>
+          <object>objects\Building</object>
+        </objects>
       </objects>
-      <objects name="AnomalySystem">
-        <object>objects\AnomalySystem</object>
-        <object>objects\Anomaly</object>
+      <objects name="FactionSystem">
+        <object>objects\FactionSystem</object>
+        <object>objects\Faction</object>
+        <object>objects\FactionInitObject</object>
+        <objects name="CultureSystem">
+          <object>objects\CultureSystem</object>
+          <object>objects\Culture</object>
+        </objects>
+        <objects name="PerkSystem">
+          <object>objects\PerkSystem</object>
+          <object>objects\Perk</object>
+        </objects>
+        <objects name="TechSystem">
+          <object>objects\TechSystem</object>
+          <object>objects\Tech</object>
+        </objects>
+        <objects name="ResourceSystem">
+          <object>objects\ResourceSystem</object>
+          <object>objects\ResourceModifier</object>
+        </objects>
+        <objects name="FlagSystem">
+          <object>objects\FlagSystem</object>
+          <object>objects\Flag</object>
+        </objects>
+        <objects name="WeaponSystem">
+          <object>objects\WeaponSystem</object>
+          <object>objects\Weapon</object>
+          <object>objects\WeaponPartSystem</object>
+          <object>objects\WeaponPart</object>
+        </objects>
       </objects>
-      <objects name="CitySystem">
-        <object>objects\CitySystem</object>
-        <object>objects\City</object>
-      </objects>
-      <objects name="BuildingSystem">
-        <object>objects\BuildingSystem</object>
-        <object>objects\Building</object>
-      </objects>
-    </objects>
-    <objects name="FactionSystem">
-      <object>objects\FactionSystem</object>
-      <object>objects\Faction</object>
-      <object>objects\FactionInitObject</object>
-      <objects name="CultureSystem">
-        <object>objects\CultureSystem</object>
-        <object>objects\Culture</object>
-      </objects>
-      <objects name="PerkSystem">
-        <object>objects\PerkSystem</object>
-        <object>objects\Perk</object>
-      </objects>
-      <objects name="TechSystem">
-        <object>objects\TechSystem</object>
-        <object>objects\Tech</object>
-      </objects>
-      <objects name="ResourceSystem">
-        <object>objects\ResourceSystem</object>
-        <object>objects\ResourceModifier</object>
-      </objects>
-      <objects name="FlagSystem">
-        <object>objects\FlagSystem</object>
-        <object>objects\Flag</object>
-      </objects>
-      <objects name="WeaponSystem">
-        <object>objects\WeaponSystem</object>
-        <object>objects\Weapon</object>
-        <object>objects\WeaponPartSystem</object>
-        <object>objects\WeaponPart</object>
-      </objects>
-    </objects>
-    <objects name="ArenaSystem">
-      <object>objects\ArenaSystem</object>
-      <object>objects\Arena</object>
-      <objects name="EnvironmentSystem">
-        <object>objects\EnvironmentSystem</object>
-        <object>objects\Environment</object>
-      </objects>
-      <objects name="BackgroundSystem">
-        <object>objects\BackgroundSystem</object>
-        <object>objects\Background</object>
+      <objects name="ArenaSystem">
+        <object>objects\ArenaSystem</object>
+        <object>objects\Arena</object>
+        <objects name="EnvironmentSystem">
+          <object>objects\EnvironmentSystem</object>
+          <object>objects\Environment</object>
+        </objects>
+        <objects name="BackgroundSystem">
+          <object>objects\BackgroundSystem</object>
+          <object>objects\Background</object>
+        </objects>
+        <objects name="EffectSystem">
+          <object>objects\EffectSystem</object>
+          <object>objects\Effect</object>
+        </objects>
+        <objects name="DamageSystem">
+          <object>objects\Field</object>
+          <object>objects\FieldModifier</object>
+        </objects>
+        <objects name="ParticleSystem">
+          <object>objects\ParticleSystem</object>
+          <object>objects\Particle</object>
+        </objects>
       </objects>
     </objects>
     <objects name="TestSystem">
@@ -299,6 +311,7 @@
   <rooms name="rooms">
     <room>rooms\test_room</room>
     <room>rooms\WorldRoom</room>
+    <room>rooms\ArenaRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

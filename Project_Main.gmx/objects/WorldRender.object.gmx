@@ -115,7 +115,6 @@ for(var i = 0; i &lt; World.mapWidth; i++)
             draw_line(localGridX2-worldCellWidth/2, localGridY, localGridX2-worldCellWidth/2, localGridY2);
             draw_line(localGridX, localGridY2-worldCellHeight/2, localGridX2, localGridY2-worldCellHeight/2);
             */
-            
             draw_rectangle_color_adjusted(localGridX, localGridY, localGridX2, localGridY2, gridColor, gridColor, gridColor, gridColor, 0);                      
             
             if(grid)

@@ -319,7 +319,7 @@ var size = 160;
 
 WorldInit(100, 100, DisplaySystem.resX-100, DisplaySystem.resY-100, round(size), round(size*0.5625), r_seed);
 //WorldBuildCacheTemperature(10, 40);
-WorldGenerateBiomes(2, true, 2, 6, 2, 8);
+WorldGenerateBiomes(2, true, 2, 6, 1, 8);
 WorldGenerateOceans(2, true, 8, 5, 20, 0.4, 2, 20);
 WorldGenerateCities(1, 80, 2, 5);
 WorldGenerateAnomaly(0, 80, 5);

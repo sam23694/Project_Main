@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>ObjectStoreCore</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,38 +27,7 @@
             <kind>1</kind>
             <string>///Initialisation
 
-//This object represents each instance that an arena is used. It stores all information used to display the 
-//arena in the arenaroom
-
-//The region hosting the arena, used for all context data, including city and biome
-regionX = -1;
-regionY = -1;
-
-//Both factions interacting with this arena. The AI will be given reference to the faction is plays,
-// the attFaction field will be -1 when viewing a city
-DefFaction = -1;
-attFaction = -1;
-
-//The reference for the chosen background and environment as randomly decided from the biome information
-background = -1;
-environment = -1;
-
-//Background information - from biome of the host region
-//Environment information - from the biome of the host region and state of the host city
-//Region information - from the host region
-//City information - form the host city
-//weapon information - from the attacker weapon, resource and tech information
-//defense information - from the host weapon, resource and tech information
-//faction information - from the host and attacker faction information
-
-//Arena Systems:
-//Each of these will derive information from the Arena object, however the Arena object will not be
-//persistent, meaning proper variable management will be required, or the listed systems wont be persistent
-
-//Environment System
-//Background System
-//
-
+event_inherited();
 </string>
           </argument>
         </arguments>
